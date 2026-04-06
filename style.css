@@ -1,0 +1,549 @@
+:root {
+    --bg-color: #fcfbf9;
+    --bg-color-alt: #f4f3ef;
+    --text-primary: #111111;
+    --text-secondary: #555555;
+    --gold: #fdb913;
+    --gold-dark: #c19b3d;
+    --gold-light: #fef2c7;
+    --brown-dark: #5c4a45;
+    --white: #ffffff;
+    --border-color: #e5e7eb;
+    
+    --font-heading: 'Plus Jakarta Sans', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-body);
+    background-color: var(--bg-color);
+    color: var(--text-primary);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+h1, h2, h3, h4, .logo {
+    font-family: var(--font-heading);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+.highlight {
+    color: var(--gold-dark);
+}
+
+/* Navbar */
+.navbar {
+    padding: 24px 0;
+    position: sticky;
+    top: 0;
+    background-color: rgba(252, 251, 249, 0.9);
+    backdrop-filter: blur(8px);
+    z-index: 100;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: var(--text-secondary);
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.3s;
+    position: relative;
+}
+
+.nav-links a:hover {
+    color: var(--text-primary);
+}
+
+.nav-links a.active {
+    color: var(--text-primary);
+}
+
+.nav-links a.active::after {
+    content: '';
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: var(--gold);
+    border-radius: 2px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 24px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: var(--gold);
+    color: #000;
+}
+
+.btn-primary:hover {
+    background-color: #ebb01e;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(253, 185, 19, 0.3);
+}
+
+.btn-secondary {
+    background-color: #efedeb;
+    color: var(--text-primary);
+}
+
+.btn-secondary:hover {
+    background-color: #e2e0dd;
+    transform: translateY(-2px);
+}
+
+.btn-secondary i {
+    margin-right: 8px;
+    font-size: 12px;
+}
+
+.btn-large {
+    padding: 16px 32px;
+    font-size: 16px;
+    border-radius: 8px;
+}
+
+/* Hero Section */
+.hero {
+    padding: 80px 0 100px;
+}
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.hero-content {
+    flex: 1;
+    max-width: 580px;
+}
+
+.badge {
+    display: inline-flex;
+    align-items: center;
+    background-color: var(--gold-light);
+    color: var(--gold-dark);
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    margin-bottom: 32px;
+}
+
+.dot {
+    width: 6px;
+    height: 6px;
+    background-color: var(--gold);
+    border-radius: 50%;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.hero-content h1 {
+    font-size: 64px;
+    line-height: 1.05;
+    margin-bottom: 24px;
+}
+
+.hero-content p {
+    color: var(--text-secondary);
+    font-size: 18px;
+    margin-bottom: 40px;
+    max-width: 480px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 16px;
+}
+
+.hero-image {
+    flex: 1;
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 600px;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 30px 60px rgba(0,0,0,0.15);
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+}
+
+/* Features Section */
+.features {
+    padding: 80px 0 120px;
+    background-color: var(--bg-color-alt);
+    border-top: 1px solid rgba(0,0,0,0.03);
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 48px;
+    line-height: 1.2;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    gap: 24px;
+}
+
+/* Cards */
+.card {
+    background-color: var(--white);
+    border-radius: 16px;
+    padding: 40px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+}
+
+.card h3 {
+    font-size: 20px;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: var(--text-secondary);
+    font-size: 14px;
+    margin-bottom: 32px;
+}
+
+/* Drawdown Card */
+.card-drawdown {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+}
+
+.card-icon {
+    width: 40px;
+    height: 40px;
+    background-color: var(--gold);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    font-size: 18px;
+}
+
+.chart-image-container {
+    border-radius: 8px;
+    overflow: hidden;
+    width: 100%;
+    background-color: #1a1a1a;
+    aspect-ratio: 2/1; /* Roughly wide and short */
+}
+
+.chart-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+/* Winrate Card */
+.card-winrate {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+    background-color: var(--brown-dark);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-winrate p {
+    color: rgba(255,255,255,0.7);
+    max-width: 280px;
+    margin: 0 auto;
+}
+
+.card-winrate h3 {
+    margin-bottom: 16px;
+}
+
+.big-stat {
+    font-size: 80px;
+    font-weight: 800;
+    color: var(--gold);
+    line-height: 1;
+    margin-bottom: 24px;
+    font-family: var(--font-heading);
+}
+
+/* Cards Bottom Row container */
+.card-performance {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Specific to Performance Card */
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 4px;
+}
+
+.card-header h3 {
+    margin-bottom: 0;
+}
+
+.card-header-icon {
+    color: var(--gold-dark);
+    font-size: 20px;
+}
+
+.card-subtitle {
+    margin-bottom: 24px !important;
+}
+
+.heatmap {
+    display: flex;
+    gap: 8px;
+    margin-top: auto;
+}
+
+.heat-box {
+    height: 32px;
+    flex: 1;
+    border-radius: 4px;
+}
+
+.level-1 { background-color: #fef3c7; }
+.level-2 { background-color: #fde68a; }
+.level-3 { background-color: #fcd34d; }
+.level-4 { background-color: #fbbf24; }
+
+/* Session Card */
+.card-session {
+    grid-column: 1 / 3; 
+    /* The user's image shows the session card under the monthly performance,
+       meaning the layout is different. Let's adjust grid to match image.
+       Image: Left Column has (Drawdown), (Performance / Session Side by side).
+       Wait, let's look closer at the image.
+       Left side has a big Drawdown card.
+       Right side has a big Winrate card.
+       Then below them? Ah, it looks like Monthly Performance and Session Edge are below the Drawdown card?
+       Actually, the image shows:
+       Top Left: Drawdown Analysis.
+       Top Right: 98% Winrate.
+       Bottom Left: Monthly Performance.
+       Bottom Right (middle?): Session Edge Analysis.
+       Let's use a standard grid grid-template-columns: 1fr 1fr;
+       Left col: Drawdown, Performance.
+       Wait, in the image Monthly Performance and Session Edge are on the same row, under Drawdown and Winrate?
+       No, looking at the image:
+       Features section:
+       Row 1: [ Drawdown Analysis (wide) ]  [ 98% Winrate (tall, spans row 1 & 2?) ]
+       Row 2: [ Monthly Performance ] [ Session Edge Analysis ]
+       Let's adjust Grid.
+       Column 1: 55%, Column 2: 45%.
+       Row 1 left: Drawdown. Row 2 left: Monthly Performance. Row 2 right: Session Edge.
+       And right column has 98% Winrate spanning? No, the Winrate card is on the right of Drawdown.
+       Let's look at the width.
+       Drawdown is about 60% wide. Winrate is 40% wide.
+       Monthly Performance is under Drawdown? No, Performance and Session Edge are under Drawdown and Winrate.
+       Let's just make it a simple 2 column layout, but Performance and Session Edge are on the second row.
+    */
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+/* Adjust grid layout to match the image accurately */
+.features-grid {
+    grid-template-columns: 1fr 340px; /* Right column fixed or smaller fraction */
+    grid-template-rows: auto auto;
+    gap: 24px;
+}
+
+.card-drawdown { grid-column: 1 / 2; grid-row: 1 / 2; }
+.card-winrate { grid-column: 2 / 3; grid-row: 1 / 2; }
+
+/* The bottom two cards are next to each other, taking up the left column space?
+   No, they seem to span across. Let's change the layout to a 3-column system to handle it perfectly. */
+.features-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-auto-rows: minmax(auto, auto);
+    gap: 24px;
+}
+
+.card-drawdown {
+    grid-column: 1 / 3;
+    grid-row: 1 / 2;
+}
+
+.card-winrate {
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.card-performance {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.card-session {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+
+.progress-item {
+    margin-bottom: 20px;
+}
+
+.progress-item:last-child {
+    margin-bottom: 0;
+}
+
+.progress-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.positive {
+    color: var(--gold-dark);
+}
+
+.neutral {
+    color: var(--text-secondary);
+}
+
+.progress-bar-bg {
+    width: 100%;
+    height: 4px;
+    background-color: var(--border-color);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress-bar {
+    height: 100%;
+    border-radius: 2px;
+}
+
+.fill-gold {
+    background-color: var(--gold);
+}
+
+.fill-brown {
+    background-color: var(--brown-dark);
+}
+
+/* Responsive adjustments */
+@media (max-width: 1024px) {
+    .features-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+    .card-drawdown { grid-column: 1 / span 2; }
+    .card-winrate { grid-column: 1 / span 2; grid-row: auto; min-height: 300px; }
+    .card-performance { grid-column: 1 / 2; }
+    .card-session { grid-column: 2 / 3; }
+    
+    .hero-container {
+        flex-direction: column;
+        text-align: center;
+    }
+    .hero-content {
+        max-width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .hero-content p {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .hero-buttons {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-content h1 {
+        font-size: 48px;
+    }
+    
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .card-drawdown, .card-winrate, .card-performance, .card-session {
+        grid-column: 1 / -1;
+    }
+    
+    .nav-links {
+        display: none; /* simple mobile hide for now */
+    }
+}
