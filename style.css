@@ -426,113 +426,7 @@ h1, h2, h3, h4, h5, .logo {
     }
 }
 
-@media (max-width: 600px) {
-    .navbar {
-        padding: 8px 0;
-    }
-    .navbar .container {
-        flex-direction: row;
-        padding: 0 8px;
-        gap: 8px;
-        flex-wrap: nowrap;
-        overflow-x: auto; /* allow scrolling if it overlaps */
-        scrollbar-width: none;
-    }
-    .navbar .container::-webkit-scrollbar {
-        display: none;
-    }
-    .logo {
-        font-size: 18px;
-        flex-shrink: 0;
-    }
-    .logo span {
-        padding: 2px 6px;
-    }
-    .nav-menu {
-        flex-wrap: nowrap;
-        gap: 8px; /* ลดช่องว่างระหว่างกลุ่มเมนู */
-        justify-content: flex-end;
-        flex-shrink: 0;
-    }
-    .nav-links {
-        flex-wrap: nowrap;
-        gap: 8px; /* ลดช่องว่างระหว่างลิงก์ */
-    }
-    .nav-link {
-        font-size: 13px; /* ลดขนาดตัวอักษรลงอีกนิด */
-        white-space: nowrap;
-    }
-    .btn-nav-buy {
-        padding: 5px 12px; /* กระชับปุ่มขึ้น */
-        font-size: 13px; /* ลดขนาดตัวอักษรปุ่ม */
-        white-space: nowrap;
-    }
-    .hero-title {
-        font-size: 32px;
-    }
-    .hero-title .text-accent-brown {
-        font-size: 38px; /* ปรับลดลงให้พอดีกับจอมากขึ้น */
-    }
-    .hero-title .text-accent-yellow {
-        font-size: 22px; /* ปรับลดลงให้พอดีกับจอมากขึ้น */
-        line-height: 1.4;
-    }
-    .hero-desc {
-        font-size: 14px; /* ลดขนาดให้อยู่ใน 3 บรรทัดพอดี */
-        padding: 0 4px;
-        max-width: 100%;
-    }
-    .section-title {
-        font-size: 32px; /* คงขนาดเดิม 32px สำหรับโทรศัพท์ */
-        line-height: 1.5;
-    }
-    .section-action {
-        margin-top: 16px; /* เพิ่มช่องว่างระหว่างข้อความและปุ่มบนมือถือ */
-    }
-    .features-grid {
-        grid-template-columns: 1fr;
-    }
-    .features-grid .problem-card,
-    .features-grid .problem-card:nth-child(1),
-    .features-grid .problem-card:nth-child(2) {
-        grid-column: span 1;
-        height: auto;
-    }
-    .features-grid .problem-card:nth-child(1) .feature-img-wrapper,
-    .features-grid .problem-card:nth-child(2) .feature-img-wrapper,
-    .feature-img-wrapper {
-        height: auto;
-        min-height: 200px;
-        padding: 24px 16px;
-    }
-    .reviews-grid {
-        grid-template-columns: 1fr;
-        gap: 20px;
-    }
-    .review-col {
-        max-width: 100%;
-        padding: 0 16px;
-    }
-    .price-block {
-        padding: 20px 30px;
-        width: 90%;
-    }
-    .price-label {
-        font-size: 22px;
-    }
-    .price-value {
-        font-size: 32px;
-        padding: 4px 16px;
-    }
-    .price-unit {
-        font-size: 22px;
-    }
-    .btn-cta {
-        padding: 16px 40px !important;
-        font-size: 24px !important;
-        width: 90%;
-    }
-}
+
 
 /* Reviews Section */
 .reviews {
@@ -764,6 +658,128 @@ h1, h2, h3, h4, h5, .logo {
 }
 
 @media (max-width: 600px) {
+    /* Navbar Mobile overrides */
+    .navbar {
+        padding: 8px 0;
+    }
+    .navbar .container {
+        flex-direction: row;
+        padding: 0 8px;
+        gap: 8px;
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        scrollbar-width: none;
+    }
+    .navbar .container::-webkit-scrollbar {
+        display: none;
+    }
+    .logo {
+        font-size: 14px;
+        flex-shrink: 0;
+    }
+    .logo span {
+        padding: 1px 4px;
+    }
+    .nav-menu {
+        flex-wrap: nowrap;
+        gap: 8px;
+        justify-content: flex-end;
+        flex-shrink: 0;
+    }
+    .nav-links {
+        flex-wrap: nowrap;
+        gap: 8px;
+    }
+    .nav-link {
+        font-size: 13px;
+        white-space: nowrap;
+    }
+    .btn-nav-buy {
+        padding: 5px 12px;
+        font-size: 13px;
+        white-space: nowrap;
+    }
+
+    /* Hero Mobile overrides */
+    .hero-title {
+        font-size: 32px;
+    }
+    .hero-title .text-accent-brown {
+        font-size: 38px;
+    }
+    .hero-title .text-accent-yellow {
+        font-size: 22px;
+        line-height: 1.4;
+    }
+    .hero-desc {
+        font-size: 14px;
+        padding: 0 4px;
+        max-width: 100%;
+    }
+
+    /* Section Mobile overrides */
+    .section-title {
+        font-size: 32px;
+        line-height: 1.5;
+    }
+    .section-action {
+        margin-top: 16px;
+    }
+    .features-grid {
+        grid-template-columns: 1fr;
+    }
+    .features-grid .problem-card,
+    .features-grid .problem-card:nth-child(1),
+    .features-grid .problem-card:nth-child(2) {
+        grid-column: span 1;
+        height: auto;
+    }
+    .features-grid .problem-card:nth-child(1) .feature-img-wrapper,
+    .features-grid .problem-card:nth-child(2) .feature-img-wrapper,
+    .feature-img-wrapper {
+        height: auto;
+        min-height: 150px;
+        padding: 16px 8px;
+    }
+
+    /* Reviews Mobile overrides - MAXIMUM SIZE */
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 0 10px; /* ลด padding ข้างนอกเพื่อให้รูปใหญ่ขึ้น */
+    }
+    .review-col {
+        max-width: 100%;
+        padding: 0; /* เอา padding ของ col ออกเพื่อให้รูปชิดขอบที่สุด */
+    }
+    .review-img {
+        width: 100%;
+        border-radius: 12px;
+        box-shadow: 4px 4px 0 #7f3d0c; /* ลดขนาดเงาลงนิดนึงเพื่อให้รูปดูใหญ่ขึ้นในพื้นที่จำกัด */
+    }
+
+    /* Pricing Mobile overrides */
+    .price-block {
+        padding: 20px 30px;
+        width: 90%;
+    }
+    .price-label {
+        font-size: 22px;
+    }
+    .price-value {
+        font-size: 32px;
+        padding: 4px 16px;
+    }
+    .price-unit {
+        font-size: 22px;
+    }
+    .btn-cta {
+        padding: 16px 40px !important;
+        font-size: 24px !important;
+        width: 90%;
+    }
+
+    /* Device Switcher Mobile overrides */
     .device-switcher {
         justify-content: center;
         flex-wrap: wrap;
