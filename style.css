@@ -736,14 +736,23 @@ h1, h2, h3, h4, h5, .logo {
         gap: 12px !important;
         padding: 0 10px;
     }
-    .markets-label {
-        margin-bottom: 2px;
-    }
     .markets-list {
-        width: 100%;
-        justify-content: center;
-        overflow-x: auto;
-        padding-bottom: 5px; /* เผื่อที่ให้เลื่อนได้ง่าย */
+        width: 100% !important;
+        justify-content: center !important;
+        gap: 2.2vw !important; /* ปรับช่องว่างอัตโนมัติ */
+        padding-bottom: 5px;
+    }
+    .markets-list > span {
+        font-size: 3.4vw !important; /* ปรับขนาดตัวอักษรตลาดอัตโนมัติ */
+        gap: 1.2vw !important;
+    }
+    .markets-list span span {
+        width: 3.5vw !important; /* ปรับขนาดกล่องติ๊กถูกอัตโนมัติ */
+        height: 3.5vw !important;
+        border-width: 1.5px !important;
+    }
+    .markets-list i {
+        font-size: 2.2vw !important; /* ปรับขนาดไอคอนติ๊กถูกอัตโนมัติ */
     }
 
     /* Section Mobile overrides */
