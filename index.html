@@ -1,129 +1,182 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Logitrade - The Only Trading Journal You Need</title>
+    <title>Logitrade - Trading Journal ที่คุณต้องมี</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@500;600;700;800&family=Prompt:wght@400;500;600;700;800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Prompt:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-
 <body>
 
     <nav class="navbar">
         <div class="container">
-            <div class="logo">Logitrade </div>
-            <ul class="nav-links">
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
-                <li><a href="#">Testimonials</a></li>
-            </ul>
-            <a href="#" class="btn btn-primary">Buy Now</a>
+            <a href="#" class="logo-link"><div class="logo"><span>LOGI</span>TRADE</div></a>
+            <div class="nav-menu">
+                <div class="nav-links">
+                    <a href="#gallery" class="nav-link">ตัวอย่างไฟล์</a>
+                    <a href="https://www.youtube.com/watch?v=ArqYc0W3R1g" target="_blank" class="nav-link">คลิปสอน</a>
+                    <a href="#reviews" class="nav-link">รีวิว</a>
+                    <a href="#faq" class="nav-link">คำถาม</a>
+                </div>
+                <a href="#price-section" class="btn-nav-buy">สั่งซื้อ</a>
+            </div>
         </div>
     </nav>
 
     <header class="hero">
         <div class="container hero-container">
-            <div class="hero-content">
-                <div class="badge">
-                    <span class="dot"></span> VERSION 4.0 NOW LIVE
-                </div>
-                <h1 style="font-family: 'Prompt', sans-serif; line-height: 1.2; font-size: 56px;">Trading Journal ตัวเดียว...ที่คุณต้องมี<br>ถ้าอยาก<span class="highlight">เทรดให้เก่งขึ้นจริง</span>
-                </h1>
-                <p style="font-family: 'Prompt', sans-serif;">เปลี่ยนข้อมูลการเทรดให้เป็น Insight ระดับโปร แค่กรอกข้อมูล ที่เหลือระบบจัดการให้หมด วิเคราะห์จุดพลาดและจุดทำเงินได้ทันทีบน Google Sheets ใช้ง่าย ไม่ซับซ้อน เครื่องมือที่คนจริงจังทิ้งไม่ได้ 🔥</p>
+            <h1 class="hero-title" style="display: flex; flex-direction: column; align-items: center;">
+                <span class="text-accent-brown">Trading Journal</span>
+                <span class="text-accent-yellow" style="margin-top: -4px; display: inline-block; padding: 4px 16px;">ที่คุณต้องมี ถ้าอยากเทรดให้เก่งขึ้น</span>
+            </h1>
+            <p class="hero-desc">บันทึกการเทรด ที่จะเปลี่ยนข้อมูลการเทรดของคุณให้เป็นกำไร ช่วยให้คุณมองเห็นจุดพลาด แก้เกมได้ตรงจุด และพัฒนาผลลัพธ์ได้อย่างมีระบบ ทำงานบน Google Sheets ใช้ง่าย ไม่ซับซ้อน เป็นเครื่องมือที่เทรดเดอร์มือโปรพลาดไม่ได้</p>
+            <div class="supported-markets" style="margin-bottom: 16px; display: flex; justify-content: center; width: 100%; max-width: 100%;">
+                <div class="markets-banner" style="display: inline-flex; align-items: center; gap: 12px; color: #7f3d0c; font-weight: 500; flex-wrap: nowrap; overflow-x: auto; max-width: 90vw; white-space: nowrap; scrollbar-width: none;">
+                    <style>.markets-banner::-webkit-scrollbar { display: none; }</style>
+                    <span style="font-size: 16px; font-weight: 700; flex-shrink: 0;">ใช้ได้ทุกตลาด :</span>
+                    
+                    <div style="display: flex; gap: 12px; flex-wrap: nowrap; flex-shrink: 0; align-items: center;">
+                        <span style="font-size: 15px; display: flex; align-items: center; gap: 6px;">
+                            <span style="background-color: #ffffff; border: 2px solid #7f3d0c; border-radius: 4px; display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; box-shadow: 1px 1px 0 #e9bb80;">
+                                <i class="fa-solid fa-check" style="color: #7f3d0c; font-size: 10px;"></i>
+                            </span>
+                            Forex
+                        </span>
+                        
+                        <span style="font-size: 15px; display: flex; align-items: center; gap: 6px;">
+                            <span style="background-color: #ffffff; border: 2px solid #7f3d0c; border-radius: 4px; display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; box-shadow: 1px 1px 0 #e9bb80;">
+                                <i class="fa-solid fa-check" style="color: #7f3d0c; font-size: 10px;"></i>
+                            </span>
+                            ทองคำ
+                        </span>
 
-                <div class="hero-buttons">
-                    <a href="#" class="btn btn-primary btn-large" style="width: 100%; max-width: 480px; text-align: center; font-size: 22px; padding: 20px 32px; font-weight: 700; font-family: 'Prompt', sans-serif;">สั่งซื้อ Trading journal</a>
+                        <span style="font-size: 15px; display: flex; align-items: center; gap: 6px;">
+                            <span style="background-color: #ffffff; border: 2px solid #7f3d0c; border-radius: 4px; display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; box-shadow: 1px 1px 0 #e9bb80;">
+                                <i class="fa-solid fa-check" style="color: #7f3d0c; font-size: 10px;"></i>
+                            </span>
+                            Crypto
+                        </span>
+
+                        <span style="font-size: 15px; display: flex; align-items: center; gap: 6px;">
+                            <span style="background-color: #ffffff; border: 2px solid #7f3d0c; border-radius: 4px; display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; box-shadow: 1px 1px 0 #e9bb80;">
+                                <i class="fa-solid fa-check" style="color: #7f3d0c; font-size: 10px;"></i>
+                            </span>
+                            Futures
+                        </span>
+
+                        <span style="font-size: 15px; display: flex; align-items: center; gap: 6px;">
+                            <span style="background-color: #ffffff; border: 2px solid #7f3d0c; border-radius: 4px; display: flex; align-items: center; justify-content: center; width: 16px; height: 16px; box-shadow: 1px 1px 0 #e9bb80;">
+                                <i class="fa-solid fa-check" style="color: #7f3d0c; font-size: 10px;"></i>
+                            </span>
+                            หุ้น
+                        </span>
+                    </div>
                 </div>
             </div>
-            <div class="hero-image">
-                <div class="image-wrapper">
-                    <img src="assets/hero_laptop.png" alt="SheetTrade Pro Dashboard on Laptop">
-                    <div class="image-shadow"></div>
+            
+            <a href="https://buy.stripe.com/00w7sM2pUdF8e4v87L9bO01" target="_blank" class="btn btn-primary btn-cta">สั่งซื้อ</a>
+            
+            <!-- Global Device Switcher -->
+            <div class="device-switcher-container" style="margin-top: 8px; margin-bottom: 16px;">
+                <div class="device-switcher">
+                    <button class="device-btn active" data-device="desktop">
+                        <i class="fa-solid fa-desktop"></i> คอม
+                    </button>
+                    <button class="device-btn" data-device="tablet">
+                        <i class="fa-solid fa-tablet-screen-button"></i> iPad
+                    </button>
+                    <button class="device-btn" data-device="mobile">
+                        <i class="fa-solid fa-mobile-screen-button"></i> โทรศัพท์
+                    </button>
                 </div>
+            </div>
+            
+            <div class="hero-image-wrapper">
+                <img src="assets/dashboard_full.png" alt="Logitrade Dashboard Full View" id="hero-img" class="preview-img">
             </div>
         </div>
     </header>
 
-    <section class="features" id="features">
+    <section class="problems">
         <div class="container">
-            <h2 class="section-title">Institutional Metrics,<br><span class="highlight">Zero Complexity.</span></h2>
+            <h2 class="section-title"><span class="text-accent-yellow">Logitrade Journal ช่วยแก้ปัญหาอะไรของ เทรดเดอร์?</span></h2>
 
-            <div class="features-grid">
-
-                <div class="card card-drawdown">
-                    <div class="card-icon"><i class="fa-solid fa-chart-line"></i></div>
-                    <h3>Detailed Drawdown Analysis</h3>
-                    <p>Understand your risk like a pro. Our algorithm tracks peak-to-trough declines automatically to
-                        protect your capital.</p>
-                    <div class="chart-image-container">
-                        <img src="assets/drawdown_graph.png" alt="Drawdown Analysis Graph">
+            
+            <div class="problems-grid">
+                
+                <div class="problem-card">
+                    <div class="problem-header">
+                        <div class="badge-num">1</div>
+                        <h3>ไม่รู้ว่าเทรดพลาดตรงไหน</h3>
+                    </div>
+                    <div class="problem-body">
+                        <p class="problem-label"><i class="fa-solid fa-triangle-exclamation"></i> ปัญหา</p>
+                        <p class="problem-text">เทรดแพ้ซ้ำ ๆ แต่ไม่รู้ว่าผิดที่ระบบ หรือผิดที่ตัวเอง สุดท้ายแก้ไม่ตรงจุด วนลูปเดิม</p>
+                        
+                        <p class="solution-label"><i class="fa-solid fa-lightbulb"></i> LogiTrade Journal ช่วยยังไง:</p>
+                        <ul class="solution-list">
+                            <li><i class="fa-solid fa-check"></i> <span>บันทึกทุกออเดอร์แบบเป็นระบบ เข้า-ออกมีเหตุผลชัดเจน</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>บันทึกอารมณ์หลังเทรด เห็นผลกระทบจากการตัดสินใจ</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>วิเคราะห์ให้อัตโนมัติว่า pattern ไหนทำกำไร และอะไรทำให้ขาดทุน</span></li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="card card-winrate">
-                    <div class="winrate-content">
-                        <div class="big-stat">98%</div>
-                        <h3>Automated Winrate</h3>
-                        <p>Real-time calculations for every asset class you trade. Two formulas required.</p>
+                <div class="problem-card">
+                    <div class="problem-header">
+                        <div class="badge-num">2</div>
+                        <h3>ควบคุมอารมณ์ตัวเองไม่ได้</h3>
+                    </div>
+                    <div class="problem-body">
+                        <p class="problem-label"><i class="fa-solid fa-triangle-exclamation"></i> ปัญหา</p>
+                        <p class="problem-text">แพ้แล้วอยากเอาคืน เทรดถี่ขึ้น ขาดทุนหนักกว่าเดิม</p>
+                        
+                        <p class="solution-label"><i class="fa-solid fa-lightbulb"></i> LogiTrade Journal ช่วยยังไง:</p>
+                        <ul class="solution-list">
+                            <li><i class="fa-solid fa-check"></i> <span>บังคับให้คิดก่อนเข้า (มีเหตุผลในการเทรด)</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>เห็นสถิติการแพ้จากการเทรดมั่ว</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>มีข้อมูลเตือนว่า "ทำแบบนี้คุณเสียเงิน"</span></li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="card card-performance">
-                    <div class="card-header">
-                        <h3>Monthly Performance</h3>
-                        <i class="fa-regular fa-calendar card-header-icon"></i>
+                <div class="problem-card">
+                    <div class="problem-header">
+                        <div class="badge-num">3</div>
+                        <h3>ไม่มีการพัฒนา</h3>
                     </div>
-                    <p class="card-subtitle">Heatmapped results by calendar day.</p>
-                    <div class="heatmap">
-                        <div class="heat-box level-1"></div>
-                        <div class="heat-box level-2"></div>
-                        <div class="heat-box level-1"></div>
-                        <div class="heat-box level-3"></div>
-                        <div class="heat-box level-2"></div>
-                        <div class="heat-box level-3"></div>
-                        <div class="heat-box level-4"></div>
+                    <div class="problem-body">
+                        <p class="problem-label"><i class="fa-solid fa-triangle-exclamation"></i> ปัญหา</p>
+                        <p class="problem-text">เทรดมานาน แต่ผลลัพธ์เหมือนเดิม ไม่รู้ว่าตัวเองดีขึ้นหรือแย่ลง</p>
+                        
+                        <p class="solution-label"><i class="fa-solid fa-lightbulb"></i> LogiTrade Journal ช่วยยังไง:</p>
+                        <ul class="solution-list">
+                            <li><i class="fa-solid fa-check"></i> <span>มี Dashboard สรุปผลรวม</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>เห็นพัฒนาการเป็นตัวเลขจริง (กำไร / Winrate / RR)</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>เปรียบเทียบช่วงเวลาได้</span></li>
+                        </ul>
                     </div>
                 </div>
 
-                <div class="card card-session">
-                    <h3>Session Edge Analysis</h3>
-
-                    <div class="progress-item">
-                        <div class="progress-info">
-                            <span>New York Open</span>
-                            <span class="positive">+4.2%</span>
-                        </div>
-                        <div class="progress-bar-bg">
-                            <div class="progress-bar fill-gold" style="width: 85%;"></div>
-                        </div>
+                <div class="problem-card">
+                    <div class="problem-header">
+                        <div class="badge-num">4</div>
+                        <h3>ไม่รู้ช่วงเวลาที่ตัวเองเทรดได้ดี</h3>
                     </div>
-
-                    <div class="progress-item">
-                        <div class="progress-info">
-                            <span>London Session</span>
-                            <span class="positive">+2.1%</span>
-                        </div>
-                        <div class="progress-bar-bg">
-                            <div class="progress-bar fill-gold" style="width: 65%;"></div>
-                        </div>
-                    </div>
-
-                    <div class="progress-item">
-                        <div class="progress-info">
-                            <span>Asia Session</span>
-                            <span class="neutral">-0.8%</span>
-                        </div>
-                        <div class="progress-bar-bg">
-                            <div class="progress-bar fill-brown" style="width: 20%;"></div>
-                        </div>
+                    <div class="problem-body">
+                        <p class="problem-label"><i class="fa-solid fa-triangle-exclamation"></i> ปัญหา</p>
+                        <p class="problem-text">เทรดทั้งวัน แต่ไม่รู้ว่าช่วงไหนทำเงิน บางช่วงคือขาดทุนล้วน ๆ</p>
+                        
+                        <p class="solution-label"><i class="fa-solid fa-lightbulb"></i> LogiTrade Journal ช่วยยังไง:</p>
+                        <ul class="solution-list">
+                            <li><i class="fa-solid fa-check"></i> <span>บันทึกทุกออเดอร์แบบเป็นระบบ เข้า-ออกมีเหตุผลชัดเจน</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>บันทึกอารมณ์หลังเทรด เห็นผลกระทบจากการตัดสินใจ</span></li>
+                            <li><i class="fa-solid fa-check"></i> <span>วิเคราะห์ให้อัตโนมัติว่า pattern ไหนทำกำไร และอะไรทำให้ขาดทุน</span></li>
+                        </ul>
                     </div>
                 </div>
 
@@ -131,6 +184,237 @@
         </div>
     </section>
 
-</body>
+    <section id="gallery" class="features-gallery" style="scroll-margin-top: 80px;">
+        <div class="container">
+            <h2 class="section-title"><span class="text-accent-yellow">Logitrade Journal มี Dashboard อะไรบ้าง?</span></h2>
+            <div class="section-action btn-group">
+                <a href="https://docs.google.com/spreadsheets/d/1bCypzo8DChl2rS7zhT4vWOuy949Znst2jlxlhLolfJ4/edit?usp=sharing" target="_blank" class="btn btn-secondary btn-theme-brown">ตัวอย่างไฟล์-Themeสีน้ำตาล <i class="fa-solid fa-arrow-pointer" style="margin-left: 10px;"></i></a>
+                <a href="https://docs.google.com/spreadsheets/d/1aLmTVskRD1zQRkh3mXkesBNBSioi5auFXcf2lJcQERU/edit?usp=sharing" target="_blank" class="btn btn-secondary btn-theme-black">ตัวอย่างไฟล์-Themeดำ <i class="fa-solid fa-arrow-pointer" style="margin-left: 10px;"></i></a>
+            </div>
+            
+            <div class="features-grid">
+                <div class="problem-card">
+                    <div class="feature-img-wrapper">
+                        <img src="assets/dashboard_monthly.png" alt="Sheet สรุปรายเดือน" id="img-monthly" class="preview-img">
+                    </div>
+                    <div class="problem-body">
+                        <h3>Sheet สรุปรายเดือน</h3>
+                        <p class="problem-text" style="margin-top: 6px; margin-bottom: 0;">ติดตามผลลัพธ์การเทรดแบบละเอียดในแต่ละเดือน เห็นกำไร-ขาดทุน รายวัน พร้อมปฏิทินสรุปผล วิเคราะห์ Winrate, RR, Drawdown ช่วยคุณเข้าใจและปรับปรุงได้ทันที</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="feature-img-wrapper">
+                        <img src="assets/dashboard_yearly.png" alt="Sheet สรุปรายปี" id="img-yearly" class="preview-img">
+                    </div>
+                    <div class="problem-body">
+                        <h3>Sheet สรุปรายปี</h3>
+                        <p class="problem-text" style="margin-top: 6px; margin-bottom: 0;">มองภาพรวมการเทรดทั้งปีแบบชัดเจน สรุปกำไรสะสม แนวโน้มการเติบโต และประสิทธิภาพของระบบ เปรียบเทียบผลลัพธ์ พัฒนาการเทรดได้อย่างเป็นระบบ</p>
+                    </div>
+                </div>
 
+                <div class="problem-card">
+                    <div class="feature-img-wrapper"><img src="assets/Dashboard ภาพรวมการเทรด.png" alt="Dashboard ภาพรวมการเทรด"></div>
+                    <div class="problem-body">
+                        <h3>Dashboard ภาพรวมการเทรด</h3>
+                        <p class="problem-text" style="margin-top: 6px; margin-bottom: 0;">เห็นภาพรวมกำไร-ขาดทุน แบบเรียลไทม์ วิเคราะห์ผลลัพธ์การเทรด แยกเป็นสถิติสำคัญ ช่วยให้เข้าใจภาพรวมหน้าเดียว</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="feature-img-wrapper"><img src="assets/ปฏิทินผลลัพธ์การเทรด.png" alt="ปฏิทินผลลัพธ์การเทรด"></div>
+                    <div class="problem-body">
+                        <h3>ปฏิทินผลลัพธ์การเทรด</h3>
+                        <p class="problem-text" style="margin-top: 6px; margin-bottom: 0;">สรุปผลการเทรดในรูปแบบปฏิทิน เห็นวันไหนกำไร/ขาดทุน วิเคราะห์พฤติกรรมการเทรดได้ง่ายขึ้น</p>
+                    </div>
+                </div>
+
+                <div class="problem-card">
+                    <div class="feature-img-wrapper"><img src="assets/Drawdown อัตโนมัติ.png" alt="Drawdown อัตโนมัติ"></div>
+                    <div class="problem-body">
+                        <h3>Drawdown อัตโนมัติ</h3>
+                        <p class="problem-text" style="margin-top: 6px; margin-bottom: 0;">แสดงช่วงขาดทุนสูงสุด พร้อมกราฟแนวโน้ม ช่วยคุมเงินทุนได้ดีขึ้น</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="feature-img-wrapper"><img src="assets/Winrate รายสัปดาห์.png" alt="Winrate รายสัปดาห์"></div>
+                    <div class="problem-body">
+                        <h3>Winrate รายสัปดาห์</h3>
+                        <p class="problem-text" style="margin-top: 6px; margin-bottom: 0;">แสดงอัตราการชนะในแต่ละวันของสัปดาห์ รู้ทันทีว่าวันไหนคุณเทรดได้ดีที่สุด และควรโฟกัสวันไหน</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="feature-img-wrapper"><img src="assets/Winrate แยกตาม Session.png" alt="Winrate แยกตาม Session"></div>
+                    <div class="problem-body">
+                        <h3>Winrate แยกตาม Session</h3>
+                        <p class="problem-text" style="margin-top: 6px; margin-bottom: 0;">วิเคราะห์ผลลัพธ์ตามช่วงเวลา (Asia / London / New York) ช่วยให้คุณรู้ว่า Session ไหนทำกำไรได้ดีที่สุด และควรเลี่ยงช่วงไหน</p>
+                    </div>
+                </div>
+                
+                <div class="problem-card">
+                    <div class="feature-img-wrapper"><img src="assets/Winrate แยกตามระบบเทรด.png" alt="Winrate แยกตามระบบเทรด"></div>
+                    <div class="problem-body">
+                        <h3>Winrate แยกตามระบบเทรด</h3>
+                        <p class="problem-text" style="margin-top: 6px; margin-bottom: 0;">เปรียบเทียบผลลัพธ์ของแต่ละกลยุทธ์ เห็นชัดว่า “ระบบไหนทำเงิน” และ “ระบบไหนควรปรับปรุง” </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews" style="scroll-margin-top: 80px;">
+        <div class="container">
+            <h2 class="section-title"><span class="text-accent-yellow">ตัวอย่างรีวิวจากเทรดเดอร์ ที่ใช้งานมากกว่า 300 คน</span></h2>
+            <div class="reviews-grid">
+                <!-- Column 1 -->
+                <div class="review-col">
+                    <img src="assets/review1.png" alt="รีวิวจากผู้ใช้งาน 1" class="review-img">
+                </div>
+                
+                <!-- Column 2 -->
+                <div class="review-col">
+                    <img src="assets/review2.png" alt="รีวิวจากผู้ใช้งาน 2" class="review-img">
+                </div>
+
+                <!-- Column 3 -->
+                <div class="review-col">
+                    <img src="assets/review3.png" alt="รีวิวจากผู้ใช้งาน 3" class="review-img">
+                </div>
+
+                <!-- Column 4 -->
+                <div class="review-col">
+                    <img src="assets/review4.png" alt="รีวิวจากผู้ใช้งาน 4" class="review-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="final-cta" class="final-cta" style="scroll-margin-top: 80px;">
+        <div class="container final-cta-container">
+            <h2 class="section-title"><span class="text-accent-brown">และทั้งหมด</span> <span class="text-accent-yellow">ที่ว่ามานี้</span></h2>
+            <p class="final-desc">ซื้อขาดครั้งเดียว มีคลิปสอนการใช้งานให้ทั้งหมด<br>และสามารถอัพเดทได้ตลอดชีพ</p>
+            <div id="price-section" class="price-block" style="scroll-margin-top: 80px;">
+                <span class="price-label">ราคาพิเศษ</span>
+                <span class="price-value">699 บาท</span>
+                <span class="price-unit">จ่ายครั้งเดียวจบ</span>
+            </div>
+            <p class="final-remark">ถ้าสนใจ สามารถสั่งซื้อที่ลิงค์นี้ได้เลยย</p>
+            <a href="https://buy.stripe.com/00w7sM2pUdF8e4v87L9bO01" target="_blank" class="btn btn-primary btn-cta" style="font-size: 32px; padding: 24px 80px;">สั่งซื้อตอนนี้</a>
+            
+            <div class="cta-mascot-wrapper" style="margin-top: 5px; display: flex; justify-content: center; width: 100%;">
+                <img src="assets/คิงคองชี้.png" alt="Logitrade Mascot" style="max-width: 650px; width: 100%; height: auto; display: block;">
+            </div>
+        </div>
+    </section>
+
+    <section id="faq" class="faq-section" style="scroll-margin-top: 80px;">
+        <div class="container faq-container">
+            <h2 class="section-title"><span class="text-accent-brown">คำถาม</span><span style="color: #7f3d0c;">ที่พบบ่อย </span><span class="text-accent-yellow">(FAQ)</span></h2>
+            <div class="faq-list">
+                
+                <details class="faq-accordion">
+                    <summary>
+                        1. ใช้งานบนโปรแกรมอะไร และใช้อุปกรณ์อะไรได้บ้าง?
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="faq-accordion-content">
+                        <p>ใช้งานผ่าน Google Sheets ใช้งานง่าย ไม่ซับซ้อน<br>สามารถใช้งานได้ทั้ง คอมพิวเตอร์, iPad และโทรศัพท์มือถือ</p>
+                    </div>
+                </details>
+
+                <details class="faq-accordion">
+                    <summary>
+                        2. ต้องคีย์ข้อมูลเอง หรือดึงจากบัญชีเทรด?
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="faq-accordion-content">
+                        <p>ด้วยระบบจะเป็น การคีย์ข้อมูลเอง โดยมีตัวเลือกให้ใช้งานง่าย<br>ข้อดีคือช่วยให้คุณได้ "ทบทวนการเทรดของตัวเอง" ทุกครั้งที่บันทึก<br>เหมือนการจดโน๊ต ทำให้เข้าใจออเดอร์มากขึ้น<br>และสามารถบันทึกได้ทั้ง เหตุผล + ความคิด + อารมณ์ ได้ละเอียดกว่า</p>
+                    </div>
+                </details>
+
+                <details class="faq-accordion">
+                    <summary>
+                        3. เป็นแบบรายเดือน หรือซื้อครั้งเดียว?
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="faq-accordion-content">
+                        <p>เป็นแบบ ซื้อขาดครั้งเดียว<br>และสามารถใช้งานได้ตลอด พร้อม อัปเดตไฟล์ฟรี</p>
+                    </div>
+                </details>
+
+                <details class="faq-accordion">
+                    <summary>
+                        4. มีคู่มือหรือวิดีโอสอนใช้งานไหม?
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="faq-accordion-content">
+                        <p>มีครับ เป็น วิดีโอสอนใช้งานแบบละเอียด<br>ตั้งแต่การตั้งค่า ไปจนถึงการใช้งานจริง</p>
+                    </div>
+                </details>
+
+                <details class="faq-accordion">
+                    <summary>
+                        5. หลังจากสั่งซื้อ จะได้รับไฟล์ทางไหน?
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="faq-accordion-content">
+                        <p>หลังจากสั่งซื้อ จะได้รับ อีเมล<br>ภายในจะมี ลิงก์ดาวน์โหลดไฟล์ และวิดีโอสอนใช้งาน</p>
+                    </div>
+                </details>
+
+                <details class="faq-accordion">
+                    <summary>
+                        6. หากไฟล์มีปัญหา หรืออยากสอบถามเพิ่มเติม ทำยังไง?
+                        <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                    </summary>
+                    <div class="faq-accordion-content">
+                        <p>สามารถทักเข้ามาที่เพจได้เลยครับ<br>ผมจะช่วยตอบคำถามและดูแลให้ทั้งหมด</p>
+                    </div>
+                </details>
+
+            </div>
+            
+
+        </div>
+    </section>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const deviceBtns = document.querySelectorAll('.device-btn');
+            const heroImg = document.getElementById('hero-img');
+
+            // Image Source Mapping
+            const images = {
+                hero: {
+                    desktop: 'assets/dashboard_full.png', // รูปที่ 1 (คอม)
+                    tablet: 'assets/dashboard_full2.png',  // รูปที่ 2 (iPad)
+                    mobile: 'assets/dashboard_full3.png.jpg'   // รูปที่ 3 (โทรศัพท์)
+                }
+            };
+
+            deviceBtns.forEach(btn => {
+                btn.addEventListener('click', () => {
+                    const device = btn.getAttribute('data-device');
+                    
+                    // Update Active Button
+                    deviceBtns.forEach(b => b.classList.remove('active'));
+                    btn.classList.add('active');
+
+                    // Animation
+                    if(heroImg) {
+                        heroImg.classList.add('switching');
+                        setTimeout(() => {
+                            // Change Src
+                            heroImg.src = images.hero[device];
+                            // End Animation
+                            heroImg.classList.remove('switching');
+                        }, 300);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
 </html>
