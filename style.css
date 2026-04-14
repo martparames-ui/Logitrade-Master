@@ -535,6 +535,17 @@ h1, h2, h3, h4, h5, .logo {
 .faq-container {
     max-width: 800px;
     margin: 0 auto;
+    text-align: center; /* เพื่อให้ Title ที่เป็น inline-block อยู่ตรงกลาง */
+}
+.faq-title-boxed {
+    display: inline-block;
+    color: #7f3d0c;
+    border: 3px solid #7f3d0c;
+    padding: 8px 32px;
+    border-radius: 12px;
+    box-shadow: 6px 6px 0 #7f3d0c;
+    background-color: transparent;
+    font-size: 32px;
 }
 .faq-title {
     font-size: 32px;
@@ -708,19 +719,41 @@ h1, h2, h3, h4, h5, .logo {
         font-size: 38px;
     }
     .hero-title .text-accent-yellow {
-        font-size: 22px;
-        line-height: 1.4;
+        font-size: 5.3vw; /* ปรับขนาดอัตโนมัติให้พอดีความกว้างจอ */
+        line-height: 1.2;
+        white-space: nowrap; /* ห้ามขึ้นบรรทัดใหม่ */
+        display: inline-block;
+        padding: 4px 10px !important; /* กระชับพื้นขอบเหลืองลงนิดหน่อย */
     }
     .hero-desc {
         font-size: 14px;
         padding: 0 4px;
         max-width: 100%;
     }
+    .markets-banner {
+        flex-direction: column !important;
+        align-items: center !important;
+        gap: 12px !important;
+        padding: 0 10px;
+    }
+    .markets-label {
+        margin-bottom: 2px;
+    }
+    .markets-list {
+        width: 100%;
+        justify-content: center;
+        overflow-x: auto;
+        padding-bottom: 5px; /* เผื่อที่ให้เลื่อนได้ง่าย */
+    }
 
     /* Section Mobile overrides */
     .section-title {
         font-size: 32px;
         line-height: 1.5;
+    }
+    .faq-title-boxed {
+        font-size: 24px; /* ลดขนาดลงในมือถือ */
+        padding: 6px 20px;
     }
     .section-action {
         margin-top: 16px;
@@ -777,6 +810,14 @@ h1, h2, h3, h4, h5, .logo {
         padding: 16px 40px !important;
         font-size: 24px !important;
         width: 90%;
+    }
+    .cta-mascot-wrapper {
+        margin-top: 20px !important;
+    }
+    .cta-mascot-wrapper img {
+        max-width: 100% !important;
+        width: 110% !important; /* ขยายให้เด่นขึ้นนิดนึง */
+        margin-left: -5%; /* ปรับตำแหน่งให้สมดุล */
     }
 
     /* Device Switcher Mobile overrides */
